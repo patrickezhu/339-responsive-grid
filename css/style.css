@@ -107,8 +107,9 @@ footer{
 
 /* Step 1: Write selector/rule property to add an underline when
 links in the navigation are in the hover or focus state.*/
-
-
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+}
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
@@ -117,15 +118,25 @@ links in the navigation are in the hover or focus state.*/
 
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
+*:focus {
+  outline: 2px solid;
+}
 
-
-
+@media only screen and (max-width: 799px) {
 /* Step 4: Write selector/rule property to style the container */
-
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  gap: 15px;
+} */
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-
+/* .container > :first-child {
+  grid-column: 1 / span 3;
+  min-height: 500px;
+  background: url('header.jpg') center / cover no-repeat fixed;
+} */
 
 
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
@@ -135,6 +146,8 @@ first div in the grid  and place it in the grid. */
 
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
+
+}
 
 
 /* Add your media query here */
